@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050813175550",
+    "project_id": "plantaaura",
+    "storage_bucket": "plantaaura.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050813175550:android:117ecf537d751bb4c2f7af",
+        "android_client_info": {
+          "package_name": "com.example.plantaaura"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmMkH0TFfgNl6dEj0Gwgmsm5eksEZ4bL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
