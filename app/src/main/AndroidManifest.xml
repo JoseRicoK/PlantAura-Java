@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,13 +17,16 @@
         android:theme="@style/Theme.PlantaAura"
         tools:targetApi="31">
         <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
             android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".VideoExplicativo"
-            android:exported="false" />
-        <activity
-            android:name=".videoExplicativo"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

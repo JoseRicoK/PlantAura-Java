@@ -6,25 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class VideoExplicativo extends AppCompatActivity {
 
-    Button btnVideo;
+    Button btnRegis, btnLog;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_video_explicativo);
 
-        btnVideo = findViewById(R.id.btnVideo);
-        btnVideo.setOnClickListener(new View.OnClickListener() {
+        btnRegis = findViewById(R.id.btnRegistro);
+        btnLog = findViewById(R.id.btnLogin);
+
+        btnRegis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -34,12 +32,15 @@ public class VideoExplicativo extends AppCompatActivity {
         });
 
 
+        btnLog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+                Intent intent1 = new Intent(VideoExplicativo.this, Login.class);
+                startActivity(intent1);
+            }
         });
+
     }
+
 }
